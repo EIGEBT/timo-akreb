@@ -124,7 +124,7 @@ return var
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1965534755,5018147636}  
+local ListSudos ={Sudo_Id,1965534755,1896887905}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -146,7 +146,7 @@ Distinguished = Redis:sismember(Timo.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 5320252951 then
 Status = 'المبرمج تيمو'
-elseif UserId == 5018147636 then  
+elseif UserId == 1896887905 then  
 Status = 'المطور العقرب'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -735,7 +735,7 @@ Distinguished = Redis:sismember(Timo.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 5320252951 then
 Status = true
-elseif UserId == 5018147636 then  
+elseif UserId == 1896887905 then  
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -777,7 +777,7 @@ Distinguished = Redis:sismember(Timo.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 5320252951 then
 Status = true
-elseif UserId == 5018147636 then  
+elseif UserId == 1896887905 then  
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -933,7 +933,7 @@ end
 if tonumber(msg.sender.user_id) == 5320252951 then
 msg.Name_Controller = 'المبرمج تيمو'
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 5018147636 then
+elseif tonumber(msg.sender.user_id) == 1896887905 then
 msg.Name_Controller = 'المطور العقرب'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -6645,7 +6645,7 @@ end
 if UserId == "5320252951" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ꨄ عذرا لا تستطيع استخدام الامر على المطور تيمو *","md",true)  
 end
-if UserId == "5018147636" then
+if UserId == "1896887905" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ꨄ عذرا لا تستطيع استخدام الامر على المطور العقرب *","md",true)  
 end
 if Redis:sismember(Timo.."BanAll:Groups",UserId) then
@@ -6694,7 +6694,7 @@ end
 if UserId == "5320252951" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ꨄ عذرا لا تستطيع استخدام الامر على المطور تيمو *","md",true)  
 end
-if UserId == "5018147636" then
+if UserId == "1896887905" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ꨄ عذرا لا تستطيع استخدام الامر على المطور العقرب *","md",true)  
 end
 local ban = LuaTele.getUser(UserId)
@@ -11632,7 +11632,7 @@ keyboard.inline_keyboard = {
 {text = '𝚍𝚎𝚟 𝚝𝚒𝚖𝚘', url = "https://t.me/tt_t_4"}
 },
 {
-{text = '𝚋𝚎𝚟 𝚎𝚕𝚊𝚔𝚛𝚎𝚋', url = "https://t.me/Alakrab_1"},{text = '𝐃𝐞𝐯 𝐋𝐢𝐝𝐨', url = "https://t.me/J0KER7x"}
+{text = '𝚋𝚎𝚟 𝚎𝚕𝚊𝚔𝚛𝚎𝚋', url = "https://t.me/Alakrab_1"},
 },
 {
 {text = '𝚜𝚘𝚞𝚛𝚌𝚎 𝚣𝚎𝚕𝚣𝚊𝚕', url = "https://t.me/SOURCE_ZELZAL"}
@@ -13931,7 +13931,7 @@ keyboard.inline_keyboard = {
 {text = '𝚍𝚎𝚟 𝚝𝚒𝚖𝚘', url = "https://t.me/tt_t_4"}
 },
 {
-{text = '𝚋𝚎𝚟 𝚎𝚕𝚊𝚔𝚛𝚎𝚋', url = "https://t.me/Alakrab_1"},{text = '𝐃𝐞𝐯 𝐋𝐢𝐝𝐨', url = "https://t.me/J0KER7x"}
+{text = '𝚋𝚎𝚟 𝚎𝚕𝚊𝚔𝚛𝚎𝚋', url = "https://t.me/Alakrab_1"}
 },
 {
 {text = '𝚜𝚘𝚞𝚛𝚌𝚎 𝚣𝚎𝚕𝚣𝚊𝚕', url = "https://t.me/SOURCE_ZELZAL"}
